@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@media screen and (min-width: 1025px) {
+  .__bpPC {
+    display: inline-block;
+  }
+  .__bpTab, .__bpSP {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .__bpPC, .__bpSP {
+    display: none;
+  }
+  .__bpTab {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .__bpTab {
+    display: none;
+  }
+  .__bpSP {
+    display: block;
+  }
+}
+
+html, body {
+  background: #fff;
+  color: #111;
+  font-family: source-han-sans-cjk-ja,"游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  html, body {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html, body {
+    font-size: 7px;
+  }
+}
+
+html a, body a {
+  text-decoration: none;
+  color: #111;
+}
+
+html a:hover, body a:hover {
+  opacity: 0.5;
+  transition: .5s;
+}
+
+html h2, html h3, html h4, body h2, body h3, body h4 {
+  font-weight: 700;
+}
+
+html p, html ul, body p, body ul {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.__enTxt {
+  font-family: bilo, sans-serif;
+}
+
+.letSpace {
+  letter-spacing: -0.1rem;
+}
+
+header {
+  height: 10rem;
+}
+
+header .wrap {
+  width: 69%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .wrap .left {
+  display: flex;
+  gap: 4rem;
+}
+
+header .wrap .left h1 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header .wrap .left nav {
+  display: flex;
+  align-items: center;
+}
+
+header .wrap .left nav ul {
+  display: flex;
+  font-weight: 700;
+  gap: 2rem;
+}
+
+header .wrap .right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header .wrap .right svg {
+  width: 2rem;
+  fill: #111;
+}
+
+main {
+  width: 69%;
+  margin: 0 auto;
+}
+
+#index #mainImage {
+  height: 38.698vw;
+  position: relative;
+}
+
+#index #mainImage #copy {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 4.271vw;
+  font-weight: 700;
+  color: #fff;
+  mix-blend-mode: difference;
+  z-index: 1;
+  line-height: 1.5;
+}
+
+#index #mainImage .img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#index #mainImage .img img {
+  width: 53.125vw;
+}
+
+#collection .collectImages {
+  padding: 4rem 0;
+}
+
+#collection .collectImages h2 {
+  padding-bottom: 4rem;
+  font-size: 1.6rem;
+}
+
+#collection .collectImages .row {
+  margin-bottom: 2.083vw;
+}
+
+#collection .collectImages .row:last-child {
+  margin-bottom: 0;
+}
+
+#collection .collectImages .row ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#collection .collectImages .row ul li {
+  width: 15.625vw;
+}
+
+#collection .collectImages .row ul li img {
+  width: 100%;
+}
+
+#concept .conceptTxt {
+  padding: 10rem 0;
+}
+
+#concept .conceptTxt .copyTxt {
+  font-size: 6rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  line-height: 2;
+  font-family: garamond-premier-pro, serif;
+}
+
+#shop .aboutShop {
+  padding: 4rem 0;
+}
+
+#shop .aboutShop h2 {
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+
+#shop .aboutShop p {
+  margin-bottom: 4rem;
+}
+
+#shop .aboutShop p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  margin: 0 auto;
+  width: 69%;
+  height: 10rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer #copyright {
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=style.css.map */
