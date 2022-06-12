@@ -67,7 +67,7 @@ html p, html ul, body p, body ul {
 }
 
 .__enTxt {
-  font-family: bilo, sans-serif;
+  font-family: garamond-premier-pro, serif;
 }
 
 .letSpace {
@@ -202,6 +202,9 @@ main {
 #shop .aboutShop h2 {
   font-size: 2.4rem;
   margin-bottom: 4rem;
+  padding-bottom: 0.8rem;
+  background: #fff;
+  border-bottom: 1px solid #111;
 }
 
 #shop .aboutShop p {
