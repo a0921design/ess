@@ -78,12 +78,23 @@ header {
   height: 10rem;
 }
 
+header svg {
+  width: 2rem;
+  fill: #111;
+}
+
 header .wrap {
   width: 69%;
   height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  header .wrap {
+    width: 90%;
+  }
 }
 
 header .wrap .left {
@@ -98,9 +109,36 @@ header .wrap .left h1 {
   font-weight: 700;
 }
 
+@media screen and (max-width: 600px) {
+  header .wrap .left h1 {
+    font-size: 4rem;
+  }
+}
+
 header .wrap .left nav {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  header .wrap .left nav {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    transition: .5s;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: #fff;
+  }
+  header .wrap .left nav.show {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 header .wrap .left nav ul {
@@ -109,15 +147,79 @@ header .wrap .left nav ul {
   gap: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+  header .wrap .left nav ul {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .wrap .left nav ul li.__bpSP {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
 header .wrap .right {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-header .wrap .right svg {
-  width: 2rem;
-  fill: #111;
+@media screen and (max-width: 600px) {
+  header .wrap .right svg {
+    display: none;
+  }
+}
+
+header .wrap .right #navBtn {
+  width: 3.6rem;
+  height: 3.6rem;
+  justify-content: center;
+  position: relative;
+  z-index: 1000;
+  transition: .5s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  header .wrap .right #navBtn {
+    display: flex;
+  }
+}
+
+header .wrap .right #navBtn #line1 {
+  height: 0.2rem;
+  width: 3rem;
+  background: #111;
+  position: absolute;
+  top: 33%;
+  transition: .5s;
+}
+
+header .wrap .right #navBtn #line1.rotate1 {
+  transform: translateY(0.6rem) rotate(-315deg);
+  background: #333;
+}
+
+header .wrap .right #navBtn #line2 {
+  height: 0.2rem;
+  width: 3rem;
+  background: #111;
+  position: absolute;
+  bottom: 33%;
+  transition: .5s;
+}
+
+header .wrap .right #navBtn #line2.rotate2 {
+  transform: translateY(-0.4rem) rotate(315deg);
+  background: #333;
 }
 
 main {
@@ -125,9 +227,21 @@ main {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+}
+
 #index #mainImage {
   height: 38.698vw;
   position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  #index #mainImage {
+    height: 113.333vw;
+  }
 }
 
 #index #mainImage #copy {
@@ -143,14 +257,34 @@ main {
   line-height: 1.5;
 }
 
-#index #mainImage .img {
+@media screen and (max-width: 600px) {
+  #index #mainImage #copy {
+    font-size: 8.167vw;
+  }
+}
+
+#index #mainImage picture {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-#index #mainImage .img img {
+@media screen and (max-width: 600px) {
+  #index #mainImage picture {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+#index #mainImage picture img {
   width: 53.125vw;
+}
+
+@media screen and (max-width: 600px) {
+  #index #mainImage picture img {
+    width: 80vw;
+  }
 }
 
 #collection .collectImages {
@@ -166,6 +300,12 @@ main {
   margin-bottom: 2.083vw;
 }
 
+@media screen and (max-width: 600px) {
+  #collection .collectImages .row {
+    margin-bottom: 0;
+  }
+}
+
 #collection .collectImages .row:last-child {
   margin-bottom: 0;
 }
@@ -175,8 +315,21 @@ main {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 600px) {
+  #collection .collectImages .row ul {
+    flex-wrap: wrap;
+  }
+}
+
 #collection .collectImages .row ul li {
   width: 15.625vw;
+}
+
+@media screen and (max-width: 600px) {
+  #collection .collectImages .row ul li {
+    width: 42.167vw;
+    margin-bottom: 5.667vw;
+  }
 }
 
 #collection .collectImages .row ul li img {
@@ -225,7 +378,19 @@ footer {
   justify-content: center;
 }
 
+@media screen and (max-width: 600px) {
+  footer {
+    width: 90%;
+  }
+}
+
 footer #copyright {
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  footer #copyright {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
