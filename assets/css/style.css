@@ -360,6 +360,11 @@ main {
   border-bottom: 1px solid #111;
 }
 
+#shop .aboutShop picture img {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
 #shop .aboutShop p {
   margin-bottom: 4rem;
 }
